@@ -74,7 +74,7 @@ const displayMovies = (movies) => {
       const poster = movie.Poster !== "N/A" ? movie.Poster : "";
 
       return `<div class="movie-card">
-      ${poster ? `<img class="movie-card__img" src="${poster}" alt="${movie.Title}" />` : '<div class="movie-card__poster-placeholder">No Image</div>'}
+      ${poster ? `<img class="movie-card__img" src="${poster}" alt="${movie.Title}" />` : '<div class="movie-card__poster-placeholder">Movie Poster<br/>Not Available </div>'}
       <h2 class="movie-card__title">${movie.Title}</h2>
       <p class="movie-card__year">${movie.Year}</p>
     </div>
@@ -128,6 +128,7 @@ function sortMovies(sortType) {
   } else if (sortType === "oldest") {
     sortedMovies.sort((a, b) => Number(a.Year) - Number(b.Year));
   }
+
   return displayMovies(sortedMovies);
 }
 

@@ -262,6 +262,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 60px;
+  font-size: 60px;
+  color: #ffff;
 }
 
 .movies__loading--spinner {
@@ -274,6 +277,15 @@ main {
 
 .fa-spinner {
   animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Skeleton Loading */
