@@ -6,6 +6,7 @@ const resultsCount = document.querySelector("#resultsCount");
 const sortSelect = document.querySelector("#sortSelect");
 
 let currentMovies = [];
+let currentSearchTerm = "";
 
 
 /* EVENT LISTENER */
