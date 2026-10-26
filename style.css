@@ -197,6 +197,7 @@ main {
   align-items: center;
   max-width: 1200px;
   margin: -20px auto 20px;
+  padding: 20px;
 }
 
 .sortSelect {
@@ -272,11 +273,11 @@ main {
   justify-content: center;
   padding-top: 60px;
   font-size: 60px;
-  color: #ffff;
+  color: red;
 }
 
 .movies__loading--spinner {
-  display: none;
+  display: none !important;
 }
 
 .movies__loading .movies__loading--spinner {
@@ -284,10 +285,10 @@ main {
 }
 
 .fa-spinner {
-  animation: rotate 600ms infinite linear;
+  animation: spinner 750ms infinite linear;
 }
 
-@keyframes rotate {
+@keyframes spinner {
   0% {
     transform: rotate(0);
   }

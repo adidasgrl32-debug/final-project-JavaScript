@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simplified Movies API ref</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
+    <script src="index.js"></script>
   </head>
 
   <body>
@@ -26,17 +26,17 @@
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
           </button>
-        <div class="movies movies__loading">
-          <i class="fas fa-spinner movies__loading--spinner"></i>
         </div>
         </div>
       </form>
+    <div class="currentMovies">
+      <i class="fas fa-spinner movies__loading--spinner"></i>
+    </div>
     </nav>
 
     <main>
       <div class="controls">
-        <p id="resultsInfo" class="resultsInfo">
-          <span>Showing:  </span>Despicable Me</p>         
+        <p id="resultsInfo" class="resultsInfo">        
         <p id="resultsCount" class="resultsCount">
         <div>
           <label for="sortSelect">Sort:</label>
@@ -48,7 +48,7 @@
             <option value="oldest">Oldest</option>
           </select>
         </div>
-      </div>
+   </div>
       <div class="movies-grid" id="moviesGrid">
         <div class="movie-card skeleton">
     <div class="movie-card__img skeleton__img">
@@ -145,4 +145,5 @@
       <p>Created by Simplified.org. Powered by OMDBapi.</p>
     </footer>
   </body>
+  
 </html>

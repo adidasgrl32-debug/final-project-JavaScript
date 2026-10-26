@@ -7,6 +7,7 @@ const sortSelect = document.querySelector("#sortSelect");
 
 let currentMovies = [];
 
+
 /* EVENT LISTENER */
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
