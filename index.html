@@ -26,6 +26,9 @@
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
           </button>
+        <div class="movies movies__loading">
+          <i class="fas fa-spinner movies__loading--spinner"></i>
+        </div>
         </div>
       </form>
     </nav>
@@ -33,20 +36,17 @@
     <main>
       <div class="controls">
         <p id="resultsInfo" class="resultsInfo">
-          <span>Showing:  </span>Despicable Me</p>
-         <p id="resultsCount" class="resultsCount">
+          <span>Showing:  </span>Despicable Me</p>         
+        <p id="resultsCount" class="resultsCount">
         <div>
           <label for="sortSelect">Sort:</label>
           <select id="sortSelect">
-            <option value="default">Default</option>
+            <option value="" disabled selected>Sort</option>    
             <option value="a to z">A to Z</option>
             <option value="z to a">Z to A</option>
             <option value="newest">Newest</option>
             <option value="oldest">Oldest</option>
           </select>
-        </div>
-        <div class="movies movies__loading">
-          <i class="fas fa-spinner movies__loading--spinner"></i>
         </div>
       </div>
       <div class="movies-grid" id="moviesGrid">
@@ -103,7 +103,7 @@
         </div>
       <div class="movie-card">
         <div class="movie-card__poster-placeholder">
-          Movie Poster<br/>Not Available </div>
+         Movie Poster<br/>Not Available </div>
         <h2 class="movie-card__title">Despicable Me: Minion Mayhem 3D</h2>
         <p class="movie-card__year">2012</p>
       </div>
@@ -140,6 +140,7 @@
     </div>
   </div>
 </main>
+
     <footer>
       <p>Created by Simplified.org. Powered by OMDBapi.</p>
     </footer>
